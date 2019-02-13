@@ -1,0 +1,25 @@
+﻿  main.cpp
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(42): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(52): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(59): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(68): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(87): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(100): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(115): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(122): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(131): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(135): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(136): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(153): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(160): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(166): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(181): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(190): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(208): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(214): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(218): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(236): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(257): warning C4018: '<': signed/unsigned mismatch
+c:\users\derek\documents\visual studio 2015\projects\cs143bproject2\cs143bproject2\main.cpp(266): warning C4018: '<': signed/unsigned mismatch
+  cs143bproject2.vcxproj -> C:\Users\Derek\documents\visual studio 2015\Projects\cs143bproject2\Debug\cs143bproject2.exe
+  cs143bproject2.vcxproj -> C:\Users\Derek\documents\visual studio 2015\Projects\cs143bproject2\Debug\cs143bproject2.pdb (Full PDB)

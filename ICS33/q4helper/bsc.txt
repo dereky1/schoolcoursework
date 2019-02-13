@@ -1,0 +1,48 @@
+# Setup
+c-->from imp import reload
+c-->import q4solution
+c-->reload(q4solution)
+c-->from goody import irange
+c-->from predicate import is_prime
+c-->from q4solution import hide, start_when, differences, once_in_a_row, alternate, windows, ascending
+
+# Test start_when
+e-->''.join([v for v in start_when('combustible', lambda x : x >='q')])-->ustible
+e-->''.join([v for v in start_when(hide('combustible'), lambda x : x >='q')])-->ustible
+e-->''.join([v for v in start_when(hide('syllable'), lambda x : x in 'aiou')])-->able
+
+# Test differences
+==-->[v for v in differences('3.14159265', '3x14129285')]-->[(2,'.','x'),(6,'5','2'),(9,'6','8')]
+==-->[v for v in differences(hide('3.14159265'), hide('3x14129285'))]-->[(2,'.','x'),(6,'5','2'),(9,'6','8')]
+==-->[v for v in differences(hide([1,2,3,4,5,6]), hide([2,2,3,4,4,4]))]-->[(1,1,2),(5,5,4),(6,6,4)]
+
+# Test once_in_a_row
+e-->''.join([v for v in once_in_a_row('abcccaaabddeee')])-->abcabde
+e-->''.join([v for v in once_in_a_row(hide('abcccaaabddeee'))])-->abcabde
+e-->''.join([v for v in once_in_a_row(l.rstrip() for l in open('in_a_row.txt'))])-->xazcmlxfij
+==-->[v for v in once_in_a_row([0,0,1,2,2,2,3,4,4,3,3,3,3,2,1,1,0])]-->[0,1,2,3,4,3,2,1,0]
+
+# Test alternate
+e-->''.join([v for v in alternate('abcde','fg','hijk')])-->afhbgic
+e-->''.join([v for v in alternate(hide('abcde'),hide('fg'),hide('hijk'))])-->afhbgic
+e-->''.join([v for v in alternate(hide('fg'),hide('hijk'),hide('abcde'))])-->fhagib
+e-->''.join([v for v in alternate(hide('abcd'), hide('efghi'),hide('jklm'))])-->aejbfkcgldhm
+
+# Test windows
+e-->''.join([str(v) for v in windows('abcdefghijk',4,2)])-->['a', 'b', 'c', 'd']['c', 'd', 'e', 'f']['e', 'f', 'g', 'h']['g', 'h', 'i', 'j'] 
+e-->''.join([str(v) for v in windows(hide('abcdefghijk'),4,2)])-->['a', 'b', 'c', 'd']['c', 'd', 'e', 'f']['e', 'f', 'g', 'h']['g', 'h', 'i', 'j'] 
+
+# Test ascending
+e-->ascending(2,[5,5,2,4,6,2,4])-->[(2, 6), (2, 4)]
+e-->ascending(3,[2,3,1,4,6,7,2,0,2,4,3])-->[(1, 7), (0, 4)]
+e-->ascending(3,[1,2,1,2,3])-->[(1, 3)]
+e-->ascending(2,hide([5,5,2,4,6,2,4]))-->[(2, 6), (2, 4)]
+e-->ascending(3,hide([5,5,2,4,6,2,4]))-->[(2, 6)]
+e-->ascending(4,hide([5,5,2,4,6,2,4]))-->[]
+e-->ascending(2,hide([2,3,1,4,6,7,2,0,2,4,3]))-->[(2, 3), (1, 7), (0, 4)]
+e-->ascending(3,hide([2,3,1,4,6,7,2,0,2,4,3]))-->[(1, 7), (0, 4)]
+e-->ascending(4,hide([2,3,1,4,6,7,2,0,2,4,3]))-->[(1, 7)]
+e-->ascending(5,hide([2,3,1,4,6,7,2,0,2,4,3]))-->[]
+e-->ascending(2,hide([1,2,1,2,3]))-->[(1, 2), (1, 3)]
+e-->ascending(3,hide([1,2,1,2,3]))-->[(1, 3)]
+e-->ascending(4,hide([1,2,1,2,3]))-->[]

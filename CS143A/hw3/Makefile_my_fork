@@ -1,0 +1,12 @@
+CC = gcc
+CFLAGS = -I.
+PROGRAM = my_fork
+
+all: my_fork.c
+	$(CC) $(CFLAGS) my_fork.c -o $(PROGRAM)
+
+run: $(PROGRAM)
+	$(PROGRAM)
+
+clean:
+	rm $(PROGRAM)

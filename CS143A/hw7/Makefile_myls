@@ -1,0 +1,13 @@
+CC = gcc
+CFLAGS = -I.
+PROGRAM = myls
+INPUT = ../hw7
+
+all:myls.c
+	$(CC) -o $(PROGRAM) myls.c $(CFLAGS)
+
+run: $(PROGRAM) $(INPUT)
+	$(PROGRAM) $(INPUT)
+
+clean:
+	rm $(PROGRAM)

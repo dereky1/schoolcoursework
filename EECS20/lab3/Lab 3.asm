@@ -1,0 +1,457 @@
+	.ORIG x3000
+
+RESTART	LD R5, COUNTER
+
+	LD R6, COUNTER2
+
+	TRAP x23
+
+	AND R1, R1, #0
+
+	ADD R1, R1, #-10
+
+	ADD R1, R1, #-10
+
+	ADD R1, R1, #-10
+
+	ADD R1, R1, #-10
+
+	ADD R1, R1, #-9
+
+	ADD R0, R0, R1
+
+	BRp LOOP
+
+OVER	LD R0, ONE	;Entered 1
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+
+	TRAP x21
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+	
+	TRAP x21
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+
+	TRAP x21
+	
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+
+	TRAP x21
+
+	ADD R5, R5, #-1
+
+	BRp OVER	;LOOP
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21	;5Degrees
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+	
+	TRAP x21
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21	;10Degrees
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+	
+	TRAP x21
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21	;15Degrees
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+
+	TRAP x21
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21	;20Degrees
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+
+	TRAP x21
+	
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21	;25Degrees
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+	
+	TRAP x21
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21	;30Degrees
+
+	ADD R5, R5, #0
+
+	BRz RESTART
+
+LOOP	LD R0, ONE	;Entered 2
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+
+	TRAP x21
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+
+	TRAP x21
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+
+	TRAP x21
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	ADD R0, R0, xA
+
+	TRAP x21
+
+	ADD R6, R6, #-1
+
+	BRp LOOP	;LOOP
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ONE
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	AND R0, R0, #0
+
+	LD R0, ZERO
+
+	TRAP x21
+
+	ADD R6, R6, #0
+
+	BRz RESTART
+
+ONE	.FILL x0031
+
+ZERO	.FILL x0030
+
+COUNTER .FILL x0003
+
+COUNTER2 .FILL x0002
+
+	.END 

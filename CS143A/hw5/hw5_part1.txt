@@ -1,0 +1,26 @@
+Starvation
+
+** Non-Preemptive = Scheduler waits until running job blocks/yields  **
+** Preemptive = Scheduler can interrupt running jobs  **
+
+1. First-Come First Served (FCFS)
+	- Could result in starvation
+	- All long jobs comes before short jobs; all jobs behind large one could potentially starve
+	- High turnaround time (Tfinish - Tstart)
+
+2. Shortest Job First (SJF)(Non-Preemptive)
+	- Starving can occur to long jobs
+	- When there are a lot of short jobs that keep coming in, then the long jobs will just starve while
+		short jobs are being run.
+
+3. Shortest Remaining Time First (SRTF)(Preemptive)
+	- Like shortest job first, starvation can occur to long jobs
+	- If jobs with small run times are continuatlly add, the larger job will be starved
+
+4. Round Robin(RR)
+	- Starvation does not occur in round robin because all jobs have equal quantum time to run
+
+5. Priority
+	- Starvation occures on low-priority jobs
+	- Solution is "Age" process 
+		-> Age jobs on low priorities so they have high prescedence as they wait longer

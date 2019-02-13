@@ -1,0 +1,9 @@
+init
+cr x 2
+req R1 1
+cr z 2
+cr a 2
+cr f 2
+cr t 2
+cr y 2
+cr h 2

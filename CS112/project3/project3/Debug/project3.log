@@ -1,0 +1,11 @@
+﻿  main.cpp
+c:\users\derek\documents\visual studio 2015\projects\project3\main.cpp(28): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\users\derek\documents\visual studio 2015\projects\project3\main.cpp(28): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\derek\documents\visual studio 2015\projects\project3\main.cpp(29): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\users\derek\documents\visual studio 2015\projects\project3\main.cpp(29): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\derek\documents\visual studio 2015\projects\project3\main.cpp(92): warning C4305: '=': truncation from 'double' to 'GLfloat'
+c:\users\derek\documents\visual studio 2015\projects\project3\main.cpp(139): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\derek\documents\visual studio 2015\projects\project3\main.cpp(132): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+  project3.vcxproj -> C:\Users\Derek\Documents\Visual Studio 2015\Projects\project3\Debug\project3.exe
+  project3.vcxproj -> C:\Users\Derek\Documents\Visual Studio 2015\Projects\project3\Debug\project3.pdb (Full PDB)

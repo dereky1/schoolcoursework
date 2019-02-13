@@ -1,0 +1,14 @@
+1	David Goliath	2009909	120
+
+3	The Rock	290	78
+
+2	Lauren Tim	23	69
+
+4	Ms Cowen	130	50
+
+5	Tobby Allmighty	200	70
+
+6	Naruto Uzumaki	50	58
+
+7	Sasuke Uchiha	120	58
+

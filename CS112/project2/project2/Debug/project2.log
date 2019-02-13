@@ -1,0 +1,7 @@
+﻿  sceneModule.cpp
+c:\users\derek\documents\visual studio 2015\projects\project2\scenemodule.cpp(16): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+c:\users\derek\documents\visual studio 2015\projects\project2\scenemodule.cpp(17): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+c:\users\derek\documents\visual studio 2015\projects\project2\scenemodule.cpp(29): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\users\derek\documents\visual studio 2015\projects\project2\scenemodule.cpp(29): warning C4305: 'initializing': truncation from 'double' to 'float'
+  project2.vcxproj -> C:\Users\Derek\documents\visual studio 2015\Projects\project2\Debug\project2.exe
+  project2.vcxproj -> C:\Users\Derek\documents\visual studio 2015\Projects\project2\Debug\project2.pdb (Full PDB)

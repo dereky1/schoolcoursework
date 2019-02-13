@@ -1,0 +1,9 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	COUNTER                 30E1
+//	COUNTER2                30E2
+//	LOOP                    3098
+//	ONE                     30DF
+//	OVER                    300B
+//	RESTART                 3000
+//	ZERO                    30E0

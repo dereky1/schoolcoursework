@@ -1,0 +1,73 @@
+	.ORIG x3000	
+
+START	AND R0, R0, #0
+
+	ADD R0, R0, xA
+
+	TRAP x21
+
+	AND R5, R5, #0
+
+	LD R1, NASCII
+
+	AND R0, R0, #0
+
+	LEA R0, FIRST
+
+	TRAP x22
+
+	AND R0, R0, #0
+
+	AND R6, R6, #0
+
+	TRAP x23
+
+	ADD R6, R6, R0
+
+	ADD R6, R6, R1
+
+	ADD R0, R0, R1
+
+	BRnz END
+
+	AND R0, R0, #0
+
+	LEA R0, LETTER
+
+	TRAP x22
+
+	TRAP x23
+	
+	LD R4, LOWERC
+	
+	ADD R0, R0, R4
+
+LOOP	TRAP x21
+
+	ADD R6, R6, #-1
+
+	BRp LOOP
+
+	ADD R6, R6, R1 
+
+	BRnzp START			
+
+END	AND R0, R0, #0
+
+	LEA R0, BYE
+
+	TRAP x22
+
+	TRAP x25		
+
+FIRST	.STRINGZ "Enter a number n between 1 and 9"
+
+NASCII	.FILL x-0030
+
+LOWERC	.FILL x0020
+
+BYE	.STRINGZ "Bye"
+
+LETTER	.STRINGZ "Enter an uppercase letter"
+
+	.END
